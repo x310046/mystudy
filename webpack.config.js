@@ -29,7 +29,8 @@ module.exports ={
             {test:/\.js$/,use:'babel-loader',exclude:/node_module/},
             {test:/\.(jpeg|png|gif|bmp|jpg)$/,use:'url-loader?limit=123123&name=[hash:8]-[name].[ext]'},
             {test:/\.(ttf|eot|svg|woff|woff2)$/,use:'url-loader'},
-            {test:/\.css/,use:["style-loader","css-loader"]}
+            {test:/\.css/,use:["style-loader","css-loader"]},
+            {test:/\.scss/,use:["style-loader","css-loader","sass-loader"]}
         ]
     }
 }
