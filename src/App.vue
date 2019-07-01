@@ -3,7 +3,9 @@
     <!-- 头部导航 -->
       <mt-header fixed title="首页"></mt-header>
     <!-- 内容区 -->
-    <router-view></router-view>
+    <transition model="out-in">
+      <router-view></router-view>
+    </transition>
     <!-- 底部导航 -->
     <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -41,5 +43,23 @@ export default {
 <style scoped>
   .app-container{
     padding-top: 40px;
+    overflow-x: hidden;
   }
+
+  .v-enter{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  .v-leave-to{
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+  }
+
+  .v-enter-active,
+  .v-leave-active{
+    transition: all 0.5s ease;
+  }
+  
 </style>
