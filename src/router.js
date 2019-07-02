@@ -7,6 +7,12 @@ import MemberContainer from '../components/tabbar/MemberContainer.vue'
 import SearchContainer from '../components/tabbar/SearchContainer.vue'
 import ShopContainer from '../components/tabbar/ShopContainer.vue'
 
+//news组件
+import NewsList from '../components/news/NewsList.vue'
+
+//图片分享组件
+import Shpoing from '../components/shop/Shoping.vue'
+
 
 
 
@@ -17,6 +23,8 @@ var router = new VueRouter({
        {path:'/member',component:MemberContainer},
        {path:'/search',component:SearchContainer},
        {path:'/shop',component:ShopContainer},
+       {path:'/home/newslist',component:NewsList},
+       {path:'./home/shoping',conmponent:Shpoing}
     ],
     linkActiveClass:'mui-active'    //覆盖默认路由高亮的类
 })
