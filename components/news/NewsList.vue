@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1>hhhh</h1>
         <ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media" v-for="item in newslist" :key="item.id">
 					<a href="javascript:;">
@@ -12,9 +13,7 @@
                             </p>
 						</div>
 					</a>
-				</li>
-				
-				
+				</li>								
 			</ul>
     </div>
 </template>

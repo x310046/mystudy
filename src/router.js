@@ -11,7 +11,10 @@ import ShopContainer from '../components/tabbar/ShopContainer.vue'
 import NewsList from '../components/news/NewsList.vue'
 
 //图片分享组件
-import Shpoing from '../components/shop/Shoping.vue'
+import Shoping from '../components/shop/Shoping.vue'
+
+//商品组件
+import ShareImg from '../components/shareImg/ShareImg.vue'
 
 
 
@@ -24,7 +27,8 @@ var router = new VueRouter({
        {path:'/search',component:SearchContainer},
        {path:'/shop',component:ShopContainer},
        {path:'/home/newslist',component:NewsList},
-       {path:'./home/shoping',conmponent:Shpoing}
+       {path:'/home/shop',component:Shoping},
+       {path:'/home/shareImg',component:ShareImg}
     ],
     linkActiveClass:'mui-active'    //覆盖默认路由高亮的类
 })
